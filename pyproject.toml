@@ -10,10 +10,13 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 pytelegrambotapi = "^4.20.0"
 python-dotenv = "^1.0.1"
 
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
 
 [build-system]
 requires = ["poetry-core"]
