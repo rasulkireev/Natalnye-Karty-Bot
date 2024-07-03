@@ -3,7 +3,7 @@ import os
 import telebot
 from dotenv import load_dotenv
 
-from natalnye_karty_bot.utils import get_natal_map
+from utils import get_natal_map
 
 load_dotenv()
 
