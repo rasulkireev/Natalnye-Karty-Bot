@@ -13,6 +13,7 @@ packages = [
 python = "^3.11"
 pytelegrambotapi = "^4.20.0"
 python-dotenv = "^1.0.1"
+anthropic = "^0.30.1"
 
 
 [tool.poetry.group.dev.dependencies]

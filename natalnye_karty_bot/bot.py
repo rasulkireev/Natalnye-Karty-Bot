@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from utils import get_natal_map
 
-load_dotenv()
+load_dotenv(override=True)
 
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
