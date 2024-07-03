@@ -10,7 +10,7 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 pytelegrambotapi = "^4.20.0"
 python-dotenv = "^1.0.1"
 
