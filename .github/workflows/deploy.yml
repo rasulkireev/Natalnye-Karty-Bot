@@ -5,6 +5,9 @@ on:
     branches:
         - main
 
+env:
+  PROJECT_NAME: natalnye-karty-bot
+
 jobs:
   build-and-deploy:
     name: Deploy
@@ -35,6 +38,6 @@ jobs:
         uses: caprover/deploy-from-github@main
         with:
             server: ${{ secrets.CAPROVER_SERVER }}
-            app: ${{ github.repository }}
+            app: ${{ env.PROJECT_NAME }}
             token: '${{ secrets.APP_TOKEN }}'
             image: ghcr.io/${{ github.repository }}
