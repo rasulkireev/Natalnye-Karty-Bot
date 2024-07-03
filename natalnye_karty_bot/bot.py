@@ -47,6 +47,7 @@ def birth_location_handler(message, name, birth_date):
 
 def fetch_natal_map(message, name, birth_date, birth_time):
     birth_location = message.text
+    bot.send_message(message.chat.id, "Ваша карта готовится!")
     map = get_natal_map(name, birth_date, birth_time, birth_location)
     bot.send_message(message.chat.id, "Ваша карта готова!")
     bot.send_message(message.chat.id, map, parse_mode="Markdown")
