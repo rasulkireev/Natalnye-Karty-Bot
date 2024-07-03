@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "natalnye-karty-bot"
+version = "0.1.0"
+description = ""
+authors = ["Rasul Kireev <me@rasulkireev.com>"]
+readme = "README.md"
+packages = [
+    { include = "natalnye_karty_bot" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytelegrambotapi = "^4.20.0"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
